@@ -1,0 +1,30 @@
+package:
+  name: pywaterflood
+  version: "0.3.0"
+
+source:
+  url: https://files.pythonhosted.org/packages/4f/fb/a6c6b6483c930cbd8fc97badcd0511f33bffc15697e5573e9b5e24ed9f88/pywaterflood-0.3.0.tar.gz
+  sha256: ba608bef9d5e7506e5d7aa0800bf4de5da26e7e3c3f6e165e4ce9f9ed9fcc869
+
+requirements:
+  host:
+    - python
+    - pip
+    - maturin
+
+  run:
+    - python
+    - numpy >=1.21
+    - scipy >=1.4
+    - pandas >=1.3.5
+    - openpyxl >=3.0.9
+    - joblib >=1.1.0
+
+
+test:
+  imports:
+    - pywaterflood
+
+about:
+  home: https://github.com/frank1010111/pywaterflood
+  license: MIT
